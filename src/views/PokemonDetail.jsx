@@ -44,15 +44,17 @@ const PokemonDetail = () => {
           <div className="text-center grid grid-cols-2  -my-36 pb-44 ">
             <ul className="">
               <li className="font-semibold text-xl">Type</li>
-              <li className="bg-teal-500 mx-20 my-4">{pokemon.types[0].type.name}</li>
-              <li className="bg-violet-600 mx-20">{pokemon.types[1].type.name}</li>
+              <li className="bg-teal-500 mx-20 my-4">{pokemon.types[0]?.type.name}</li>
+              <li className="bg-violet-600 mx-20">{pokemon.types[1]?.type.name}</li>
             </ul>
             <ul>
               <li className="c">Abilities</li>
               <li className="bg-teal-500 mx-20 my-4">
                 {pokemon.abilities[0].ability.name}
               </li>
-              <li className="bg-violet-600 mx-20">{pokemon.abilities[1].ability.name}</li>
+              <li className="bg-violet-600 mx-20">
+                {pokemon.abilities[1]?.ability.name}
+              </li>
             </ul>
           </div>
           <section className="">

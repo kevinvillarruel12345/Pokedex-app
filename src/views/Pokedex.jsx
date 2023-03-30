@@ -30,10 +30,10 @@ const Pokedex = () => {
   return (
     <div className="w-full p-5 py-10">
       <p>
-        <span className="text-red-500 font-semibold">Welcome {user}, </span> choose the
+        <span className="text-red-500 font-semibold text-lg ">Welcome {user}, </span>choose the
         pokemeon that you like the most
       </p>
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row gap-3 py-6">
         {pokemonsPagination.pages.map((page) => (
           <button
             key={page}
@@ -55,8 +55,8 @@ const Pokedex = () => {
               value={pokemonName}
               onChange={handleNameChange}
             />
-            <select name="pokemon_type" value={pokemonType} onChange={handleTypeChange}>
-              <option value="">All types</option>
+            <select className='bg-red-500 rounded text-white' name="pokemon_type" value={pokemonType} onChange={handleTypeChange}>
+              <option  value="">All types</option>
               {types.map((type) => (
                 <option key={type.url} value={type.name}>
                   {type.name}

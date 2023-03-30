@@ -40,7 +40,7 @@ const PokemonCard = ({ pokemonData }) => {
             <header className="">
               <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-16">
                 <img
-                  className=" rounded-t-lg float absolute w-44 -my-24 -mx-12"
+                  className=" rounded-t-lg float absolute w-44 -my-24 -mx-16"
                   src={pokemon?.sprites.other['official-artwork'].front_default}
                   alt={pokemon.name}
                 />
